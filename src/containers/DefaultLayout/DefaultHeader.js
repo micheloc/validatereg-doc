@@ -86,7 +86,7 @@ class DefaultHeader extends Component {
           </Nav>
 
           <Nav navbar>
-            <NavItem className="px-3">
+            {/* <NavItem className="px-3">
               <NavLink to="/dashboard" className="nav-link" >Principal</NavLink>
             </NavItem>
             <NavItem className="px-3">
@@ -94,7 +94,7 @@ class DefaultHeader extends Component {
             </NavItem>
             <NavItem className="px-3">
               <a className="btn btn-link" onClick={this.toggle}>Contato</a>
-            </NavItem>
+            </NavItem> */}
           </Nav>
       </React.Fragment>
     );
