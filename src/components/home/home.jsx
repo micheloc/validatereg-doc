@@ -23,7 +23,9 @@ class componentName extends Component {
     this.state={
       cadastro:{
         nome: "", 
-        sobrenome: ""
+        sobrenome: "", 
+        cpf: "", 
+        cnpj: ""
       }
     }
     this.input_req = this.input_req.bind(this); 
@@ -82,7 +84,7 @@ class componentName extends Component {
           <Col xl="12">
             <Card>
               <CardBody>
-                <h3 className="color_example">Example</h3>     
+                <h3 className="color_example">Example InpuT</h3>     
                 <h4>Teste com um campo obrigatório e outro não obrigatório.</h4>
                 <Card>
                   <CardBody>
@@ -107,8 +109,41 @@ class componentName extends Component {
                 </CardFooter>
               </Card>
           </Col>
-
         </Row>
+
+
+
+        <Row >
+          <Col xl="12">
+            <Card>
+              <CardBody>
+                <h3 className="color_example">Example InputRegistro</h3>     
+                <h4>Testando Validação de CPF e CNPJ </h4>
+                <Card>
+                  <CardBody>
+                    <Col lg="12">
+                        <Label>CPF</Label>
+                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={cpf} updateValue={this.input_req}/>
+                        <Label>CPF</Label>
+                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={cnpj} updateValue={this.input_req}/>
+                    </Col>
+
+                    <ButtonGroup className="float-right form-actions">
+                      <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
+                    </ButtonGroup>
+                  </CardBody>
+                </Card>
+                </CardBody>
+                <CardFooter>
+                  <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
+                  <UncontrolledCollapse toggler="#toggler">
+                    <h1 className="color_example">Manutenção</h1>
+                  </UncontrolledCollapse>
+                </CardFooter>
+              </Card>
+          </Col>
+        </Row>
+
 
 
 
