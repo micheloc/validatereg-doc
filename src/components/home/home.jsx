@@ -21,14 +21,12 @@ class componentName extends Component {
   constructor(props){
     super(props); 
     this.state={
-      cadastro1:{
+      cadastro:{
         nome: "", 
-        sobrenome: ""
+        sobrenome: "",
+        cpf: "", 
+        cnpj: ""
       },
-      cadastro2:{
-        cpf:"", 
-        cnpj:""
-      }
     }
     this.input_req = this.input_req.bind(this); 
     this.validate_input = this.validate_input.bind(this); 
@@ -86,15 +84,15 @@ class componentName extends Component {
           <Col xl="12">
             <Card>
               <CardBody>
-                <h3 className="color_example">Example InpuT</h3>     
+                <h3 className="color_example">Example ("InpuT")</h3>     
                 <h4>Teste com um campo obrigatório e outro não obrigatório.</h4>
                 <Card>
                   <CardBody>
                     <Col lg="12">
                         <Label>Nome</Label>
-                        <InpuT name="nome" req={ true } value={ this.state.cadastro1.nome } updateValue={this.input_req}/>
+                        <InpuT name="nome" req={ true } value={ this.state.cadastro.nome } updateValue={this.input_req}/>
                         <Label>Sobrenome</Label>
-                        <InpuT name="sobrenome" req={ false } value={ this.state.cadastro1.sobrenome } updateValue={this.input_req}/>
+                        <InpuT name="sobrenome" req={ false } value={ this.state.cadastro.sobrenome } updateValue={this.input_req}/>
                     </Col>
 
                     <ButtonGroup className="float-right form-actions">
@@ -119,20 +117,20 @@ class componentName extends Component {
           <Col xl="12">
             <Card>
               <CardBody>
-                <h3 className="color_example">Example InputRegistro</h3>     
-                <h4>Testando Validação de CPF e CNPJ </h4>
+                <h3 className="color_example">Example ("InputRegistro")</h3>     
+                <h4>Testando Validação de CPF e CNPJ com campos não obrigatório.</h4>
                 <Card>
                   <CardBody>
                     <Col lg="12">
                         <Label>CPF</Label>
-                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro2.cpf} updateValue={this.input_req}/>
-                        <Label>CPF</Label>
-                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro2.cnpj} updateValue={this.input_req}/>
+                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro.cpf} updateValue={this.input_req}/>
+                        <Label>CNPJ</Label>
+                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro.cnpj} updateValue={this.input_req}/>
                     </Col>
 
-                    <ButtonGroup className="float-right form-actions">
+                    {/* <ButtonGroup className="float-right form-actions">
                       <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
-                    </ButtonGroup>
+                    </ButtonGroup> */}
                   </CardBody>
                 </Card>
                 </CardBody>
