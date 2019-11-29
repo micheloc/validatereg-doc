@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Col, Card, CardHeader,  CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
 import { toast } from 'react-toastify'; 
-import { Btn, InpuT, InputContato, InpuNumberComp, list_comparacao, msgInputComp } from 'validatereg'; 
+import { Btn, InpuT, InputContato, InpuNumberComp, list_comparacao, msgInputComp ,InputRegistro} from 'validatereg'; 
 
 
 // Import Examples Code. 
@@ -21,11 +21,13 @@ class componentName extends Component {
   constructor(props){
     super(props); 
     this.state={
-      cadastro:{
+      cadastro1:{
         nome: "", 
-        sobrenome: "", 
-        cpf: "", 
-        cnpj: ""
+        sobrenome: ""
+      },
+      cadastro2:{
+        cpf:"", 
+        cnpj:""
       }
     }
     this.input_req = this.input_req.bind(this); 
@@ -90,9 +92,9 @@ class componentName extends Component {
                   <CardBody>
                     <Col lg="12">
                         <Label>Nome</Label>
-                        <InpuT name="nome" req={ true } value={ this.state.cadastro.nome } updateValue={this.input_req}/>
+                        <InpuT name="nome" req={ true } value={ this.state.cadastro1.nome } updateValue={this.input_req}/>
                         <Label>Sobrenome</Label>
-                        <InpuT name="sobrenome" req={ false } value={ this.state.cadastro.sobrenome } updateValue={this.input_req}/>
+                        <InpuT name="sobrenome" req={ false } value={ this.state.cadastro1.sobrenome } updateValue={this.input_req}/>
                     </Col>
 
                     <ButtonGroup className="float-right form-actions">
@@ -123,9 +125,9 @@ class componentName extends Component {
                   <CardBody>
                     <Col lg="12">
                         <Label>CPF</Label>
-                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={cpf} updateValue={this.input_req}/>
+                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro2.cpf} updateValue={this.input_req}/>
                         <Label>CPF</Label>
-                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={cnpj} updateValue={this.input_req}/>
+                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro2.cnpj} updateValue={this.input_req}/>
                     </Col>
 
                     <ButtonGroup className="float-right form-actions">
