@@ -64,7 +64,6 @@ class componentName extends Component {
           </center>
         </div>
       </Col> */}
-
         <Row >
             <Col xl="12">
               <Card>
@@ -77,73 +76,6 @@ class componentName extends Component {
               </Card>
             </Col>
         </Row>
-
-
-
-        <Row >
-          <Col xl="12">
-            <Card>
-              <CardBody>
-                <h3 className="color_example">Example ("InpuT")</h3>     
-                <h4>Teste com um campo obrigatório e outro não obrigatório.</h4>
-                <Card>
-                  <CardBody>
-                    <Col lg="12">
-                        <Label>Nome</Label>
-                        <InpuT name="nome" req={ true } value={ this.state.cadastro.nome } updateValue={this.input_req}/>
-                        <Label>Sobrenome</Label>
-                        <InpuT name="sobrenome" req={ false } value={ this.state.cadastro.sobrenome } updateValue={this.input_req}/>
-                    </Col>
-
-                    <ButtonGroup className="float-right form-actions">
-                      <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
-                    </ButtonGroup>
-                  </CardBody>
-                </Card>
-                </CardBody>
-                <CardFooter>
-                  <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
-                  <UncontrolledCollapse toggler="#toggler">
-                    <CodeInpuT />
-                  </UncontrolledCollapse>
-                </CardFooter>
-              </Card>
-          </Col>
-        </Row>
-
-
-
-        <Row >
-          <Col xl="12">
-            <Card>
-              <CardBody>
-                <h3 className="color_example">Example ("InputRegistro")</h3>     
-                <h4>Testando Validação de CPF e CNPJ com campos não obrigatório.</h4>
-                <Card>
-                  <CardBody>
-                    <Col lg="12">
-                        <Label>CPF</Label>
-                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro.cpf} updateValue={this.input_req}/>
-                        <Label>CNPJ</Label>
-                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro.cnpj} updateValue={this.input_req}/>
-                    </Col>
-
-                    {/* <ButtonGroup className="float-right form-actions">
-                      <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
-                    </ButtonGroup> */}
-                  </CardBody>
-                </Card>
-                </CardBody>
-                <CardFooter>
-                  <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
-                  <UncontrolledCollapse toggler="#toggler">
-                    <h1 className="color_example">Manutenção</h1>
-                  </UncontrolledCollapse>
-                </CardFooter>
-              </Card>
-          </Col>
-        </Row>
-
 
 
 
