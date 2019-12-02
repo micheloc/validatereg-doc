@@ -3,7 +3,6 @@ import { Col, Card, CardHeader,  CardBody, CardFooter, Row, Label,  ButtonGroup,
 import { toast } from 'react-toastify'; 
 import { Btn, InpuT, InputContato, InpuNumberComp, list_comparacao, msgInputComp ,InputRegistro} from 'validatereg'; 
 
-
 // Import Examples Code. 
 import CodeInpuT from '../ExampleInput/exampleInput'
 import CodeInstall from '../ExampleInstall/exampleInstal'

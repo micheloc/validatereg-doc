@@ -57,13 +57,13 @@ class componentName extends Component {
                                             <Label>Fax</Label>
                                                 <InputContato name="fax" tpContato={"fax"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
                                     
-                                            <Label>CNPJ</Label>
+                                            <Label>Celular</Label>
                                                 <InputContato name="celular" tpContato={"celular"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
 
-                                            <Label>CPF Required</Label>
+                                            <Label>Celular * </Label>
                                                 <InputContato name="celularReq" tpContato={"celular"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
                                     
-                                            <Label>CNPJ Required</Label>
+                                            <Label>fax *</Label>
                                                 <InputContato name="faxReq" tpContato={"fax"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
                                     
                                             <ButtonGroup className="float-right form-actions">

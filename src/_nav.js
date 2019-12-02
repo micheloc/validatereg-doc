@@ -3,7 +3,7 @@ export default {
     {
       title: true,
       name: 'Menu',
-      icon: 'icon-folder',             
+      icon: 'icon-list',             
       wrapper: {            // optional wrapper object
         element: '',        // required valid HTML5 element tag
         attributes: {}      // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
@@ -12,13 +12,16 @@ export default {
     },{
       name: 'Validate InpuT',
       url: '/nav/InpuT', 
+      icon: 'icon-text-width'
     },{
       name: 'Validate InputRegistro',
       url: '/nav/InputRegistro', 
+      icon: 'icon-address-card-o'
     },{
       name: 'Validate InputContato', 
-      url: '/nav/InputContato'
-    }
+      url: '/nav/InputContato',
+      icon: 'icon-phone' 
+    }, 
 
     // {
     //   name: 'Icons',
@@ -26,11 +29,6 @@ export default {
     //   icon: 'icon-star',
     //   class:'title',
     //   children: [
-    //     {
-    //       name: 'Icones',
-    //       url: '/icons/coreui-icons',
-    //       icon: 'icon-star',
-    //     },
     //     {
     //       name: 'Font Awesome',
     //       url: '/icons/font-awesome',
