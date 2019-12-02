@@ -53,21 +53,21 @@ class componentName extends Component {
                             <h3 className="color_example">Example ("InputRegistro")</h3>     
                             <h4>Testando Validação de CPF e CNPJ com campos não obrigatório.</h4>
                                 <CardBody>
-                                    <Label>CPF</Label>
-                                        <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro.cpf} updateValue={this.input_req}/>
-                                    
-                                    <Label>CNPJ</Label>
-                                        <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro.cnpj} updateValue={this.input_req}/>
-
-                                    <Label>CPF Required</Label>
-                                        <InputRegistro name="cpfReq" registro={"CPF"} req={ true } value={this.state.cadastro.cpfReq} updateValue={this.input_req}/>
-                                    
-                                    <Label>CNPJ Required</Label>
-                                        <InputRegistro name="cnpjReq" registro={"CNPJ"} req={ true } value={this.state.cadastro.cnpjReq} updateValue={this.input_req}/>
-                                    
-                                    <ButtonGroup className="float-right form-actions">
-                                        <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
-                                    </ButtonGroup>
+                                    <Card>
+                                        <CardBody>
+                                            <Label>CPF</Label>
+                                                <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro.cpf} updateValue={this.input_req}/>
+                                            <Label>CNPJ</Label>
+                                                <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro.cnpj} updateValue={this.input_req}/>
+                                            <Label>CPF Required</Label>
+                                                <InputRegistro name="cpfReq" registro={"CPF"} req={ true } value={this.state.cadastro.cpfReq} updateValue={this.input_req}/>
+                                            <Label>CNPJ Required</Label>
+                                                <InputRegistro name="cnpjReq" registro={"CNPJ"} req={ true } value={this.state.cadastro.cnpjReq} updateValue={this.input_req}/>
+                                            <ButtonGroup className="float-right form-actions">
+                                                <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
+                                            </ButtonGroup>
+                                        </CardBody>
+                                    </Card>
                                 </CardBody>
                             </CardBody>
                             <CardFooter>

@@ -51,21 +51,27 @@ class componentName extends Component {
                             <h3 className="color_example">Example ("InputContato")</h3>     
                             <h4>Validação dos campos de telefone obrigatórios e não obrigatórios.</h4>
                                 <CardBody>
-                                    <Label>Fax</Label>
-                                        <InputContato name="fax" tpContato={"fax"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
-                                    
-                                    <Label>CNPJ</Label>
-                                        <InputContato name="celular" tpContato={"celular"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
+                                    <Card>
+                                        <CardBody>
 
-                                    <Label>CPF Required</Label>
-                                        <InputContato name="celularReq" tpContato={"celular"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
+                                            <Label>Fax</Label>
+                                                <InputContato name="fax" tpContato={"fax"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
                                     
-                                    <Label>CNPJ Required</Label>
-                                        <InputContato name="faxReq" tpContato={"fax"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
+                                            <Label>CNPJ</Label>
+                                                <InputContato name="celular" tpContato={"celular"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
+
+                                            <Label>CPF Required</Label>
+                                                <InputContato name="celularReq" tpContato={"celular"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
                                     
-                                    <ButtonGroup className="float-right form-actions">
-                                        <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
-                                    </ButtonGroup>
+                                            <Label>CNPJ Required</Label>
+                                                <InputContato name="faxReq" tpContato={"fax"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
+                                    
+                                            <ButtonGroup className="float-right form-actions">
+                                                <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
+                                            </ButtonGroup>
+
+                                        </CardBody>
+                                    </Card>
                                 </CardBody>
                             </CardBody>
                             <CardFooter>

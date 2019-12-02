@@ -2,7 +2,7 @@ export default {
   items: [
     {
       title: true,
-      name: 'Trabalhando ainda',
+      name: 'Menu',
       icon: 'icon-folder',             
       wrapper: {            // optional wrapper object
         element: '',        // required valid HTML5 element tag
