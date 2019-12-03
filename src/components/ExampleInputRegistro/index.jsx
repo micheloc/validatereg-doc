@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Card,   CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
-import { Btn, InputRegistro} from 'validatereg'; 
-
-
-
-
+import { Btn, InputRegistro} from '../updateCodeFonte/index'; 
 import "../home.scss"; 
 
 class componentName extends Component {
@@ -24,25 +20,26 @@ class componentName extends Component {
   
     } 
   
-      input_req = (name, value) => {
-          this.setState({cadastro: {...this.state.cadastro, [name]: value}})
-      }
+    input_req = (name, value) => {
+        this.setState({cadastro: {...this.state.cadastro, [name]: value}})
+    }
   
-          //Requisitos do validateReg
-        //Utilizado para validar os campos obrigatórios.. 
-        validate_input = () => {
-          this.setState({formValidate: true})
-      }
+    //Requisitos do validateReg
+    //Utilizado para validar os campos obrigatórios.. 
+    validate_input = () => {
+        this.setState({formValidate: true})
+    }
   
-      //Requisito do validateReg 
-      //Utilizado para função do <form> do HTML. Tendo as opções de Registrar e atualizar. 
-      formValidate = () => {
-          // if (this.state.objID) {
-          //     Update(this.state.propriedade, this.props);
-          // } else {
-          //     Register(this.state.propriedade, this.props);
-          // }
-      }
+    //Requisito do validateReg 
+    //Utilizado para função do <form> do HTML. Tendo as opções de Registrar e atualizar. 
+    formValidate = () => {
+        // if (this.state.objID) {
+        //     Update(this.state.propriedade, this.props);
+        // } else {
+        //     Register(this.state.propriedade, this.props);
+        // }
+    }
+
     render() {
         return (
             <div>
@@ -71,7 +68,7 @@ class componentName extends Component {
                                 </CardBody>
                             </CardBody>
                             <CardFooter>
-                            <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
+                                <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
                                 <UncontrolledCollapse toggler="#toggler">
                                     <h1 className="color_example">Manutenção</h1>
                                 </UncontrolledCollapse>

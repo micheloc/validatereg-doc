@@ -55,16 +55,16 @@ class componentName extends Component {
                                         <CardBody>
 
                                             <Label>Fax</Label>
-                                                <InputContato name="fax" tpContato={"fax"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
+                                                <InputContato name="fax" tpContato={"FAX"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
                                     
                                             <Label>Celular</Label>
-                                                <InputContato name="celular" tpContato={"celular"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
+                                                <InputContato name="celular" tpContato={"CEL"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
 
                                             <Label>Celular * </Label>
-                                                <InputContato name="celularReq" tpContato={"celular"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
+                                                <InputContato name="celularReq" tpContato={"CEL"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
                                     
                                             <Label>fax *</Label>
-                                                <InputContato name="faxReq" tpContato={"fax"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
+                                                <InputContato name="faxReq" tpContato={"FAX"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
                                     
                                             <ButtonGroup className="float-right form-actions">
                                                 <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
