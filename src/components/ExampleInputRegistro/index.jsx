@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Card,   CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
 import { Btn, InputRegistro} from 'validatereg'; 
+import CodeExample from './exampleInputRegistro'; 
 import "../home.scss"; 
 
 class componentName extends Component {
@@ -54,12 +55,16 @@ class componentName extends Component {
                                         <CardBody>
                                             <Label>CPF</Label>
                                                 <InputRegistro name="cpf" registro={"CPF"} req={ false } value={this.state.cadastro.cpf} updateValue={this.input_req}/>
+
                                             <Label>CNPJ</Label>
                                                 <InputRegistro name="cnpj" registro={"CNPJ"} req={ false } value={this.state.cadastro.cnpj} updateValue={this.input_req}/>
-                                            <Label>CPF Required</Label>
+
+                                            <Label>CPF * </Label>
                                                 <InputRegistro name="cpfReq" registro={"CPF"} req={ true } value={this.state.cadastro.cpfReq} updateValue={this.input_req}/>
-                                            <Label>CNPJ Required</Label>
+
+                                            <Label>CNPJ * </Label>
                                                 <InputRegistro name="cnpjReq" registro={"CNPJ"} req={ true } value={this.state.cadastro.cnpjReq} updateValue={this.input_req}/>
+
                                             <ButtonGroup className="float-right form-actions">
                                                 <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
                                             </ButtonGroup>
@@ -70,7 +75,7 @@ class componentName extends Component {
                             <CardFooter>
                                 <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
                                 <UncontrolledCollapse toggler="#toggler">
-                                    <h1 className="color_example">Manutenção</h1>
+                                    <CodeExample /> 
                                 </UncontrolledCollapse>
                             </CardFooter>
                         </Card>                    

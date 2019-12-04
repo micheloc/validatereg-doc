@@ -5,7 +5,8 @@ import "../colorCode/colorFont.scss"
 
 
 
-class ExampleInput extends Component {
+class ExampleInputRegistro extends Component {
+
     render() {
         return (
             <div>
@@ -24,13 +25,14 @@ class ExampleInput extends Component {
                             {" ("}
                             <span className="props_color">{"props"}</span>
                             {")"}
-                        </h5>                            
-
+                        </h5>  
                         <h5 className="color_example">&emsp; &emsp;{"super(props);"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp;{"this.state={"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp;{"cadastro:{"}</h5>
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"nome: '', "}</h5>
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"sobrenome: '', "}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"cnpj: '', "}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"cpf: '', "}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"cpfReq: '', "}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; {"cnpjReq: '', "}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; {"}"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp;{"}"}</h5>
                         <h5 className="color_example">&emsp; &emsp;{"this.input_req = this.input_req.bind(this)"}</h5>
@@ -100,28 +102,60 @@ class ExampleInput extends Component {
                         {/* Col */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Col "}</span>{" lg='12' >"}</h5>
                         
+                        
                         {/* Label */}
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> Nome </"}<span className="elements">{"Label"}</span>{">"}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> CPF </"}<span className="elements">{"Label"}</span>{">"}</h5>
                         {/* InpuT  True */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                            {"<"}<span className="elements">{"InpuT "}</span>{"name='nome' "}
-                            {"req={ "}<span className="class_color">{"true"}</span>{" }"}
+                            {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cpf' "}
+                            {"req={ "}<span className="class_color">{"false"}</span>{" } "}
+                            {"registro={ "}<span className="state_variavel">{"CPF"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
-                            <span className="state_variavel">{"cadastro"}</span>{".nome"}
+                            <span className="state_variavel">{"cadastro"}</span>{".cpf } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
-                            <span className="componentEx_color">{"input_req"}</span> {" />"}
+                            <span className="componentEx_color">{"input_req } "}</span> {" />"}
                         </h5>
-                        <br/>
+                        <br/>   
+
                         {/* Label */}
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> Sobrenome </"}<span className="elements">{"Label"}</span>{">"}</h5>
-                        {/* InpuT False */}
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
-                            {"<"}<span className="elements">{"InpuT "}</span>{"name='sobrenome' "}
-                            {"req={ "}<span className="class_color">{"false"}</span>{" }"}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> CNPJ </"}<span className="elements">{"Label"}</span>{">"}</h5>
+                        {/* InpuT  True */}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                            {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cnpj' "}
+                            {"req={ "}<span className="class_color">{"false"}</span>{" } "}
+                            {"registro={ "}<span className="state_variavel">{"CNPJ"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
-                            <span className="state_variavel">{"cadastro"}</span>{".sobrenome"}
+                            <span className="state_variavel">{"cadastro"}</span>{".cnpj } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
-                            <span className="componentEx_color">{"input_req"}</span> {" />"}
+                            <span className="componentEx_color">{"input_req } "}</span> {" />"}
+                        </h5>
+                        <br/>   
+
+                        {/* Label */}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> CPF *</"}<span className="elements">{"Label"}</span>{">"}</h5>
+                        {/* InpuT  True */}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                            {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cpfReq' "}
+                            {"req={ "}<span className="class_color">{"true"}</span>{" } "}
+                            {"registro={ "}<span className="state_variavel">{"CPF"}</span>{" } "} 
+                            {"value={ "}<span className="this_color">{"this"}</span>{".state."}
+                            <span className="state_variavel">{"cadastro"}</span>{".cpfReq } "}
+                            {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
+                            <span className="componentEx_color">{"input_req } "}</span> {" />"}
+                        </h5>
+                        <br/> 
+
+                        {/* Label */}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"Label"}</span>{"> CNPJ *</"}<span className="elements">{"Label"}</span>{">"}</h5>
+                        {/* InpuT  True */}
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                            {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cnpjReq' "}
+                            {"req={ "}<span className="class_color">{"true"}</span>{" } "}
+                            {"registro={ "}<span className="state_variavel">{"CNPJ"}</span>{" } "} 
+                            {"value={ "}<span className="this_color">{"this"}</span>{".state."}
+                            <span className="state_variavel">{"cadastro"}</span>{".cnpjReq } "}
+                            {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
+                            <span className="componentEx_color">{"input_req } "}</span> {" />"}
                         </h5>
 
                         {/* /Col */}
@@ -148,4 +182,4 @@ class ExampleInput extends Component {
     }
 }
 
-export default ExampleInput;
+export default ExampleInputRegistro;

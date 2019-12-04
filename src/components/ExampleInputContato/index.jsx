@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Col, Card,   CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
 import { Btn, InputContato } from 'validatereg'; 
 
-import "../home.scss"; 
+import "../home.scss";
+import CodeExample from './exampleInputContato' 
 
 class componentName extends Component {
     constructor(props){
@@ -55,16 +56,16 @@ class componentName extends Component {
                                         <CardBody>
 
                                             <Label>Fax</Label>
-                                                <InputContato name="fax" tpContato={"FAX"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
+                                                <InputContato name="fax" tpContato={"fax"} req={ false } value={this.state.cadastro.fax} updateValue={this.input_req}/>
                                     
                                             <Label>Celular</Label>
-                                                <InputContato name="celular" tpContato={"CEL"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
+                                                <InputContato name="celular" tpContato={"cel"} req={ false } value={this.state.cadastro.celular} updateValue={this.input_req}/>
 
                                             <Label>Celular * </Label>
-                                                <InputContato name="celularReq" tpContato={"CEL"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
+                                                <InputContato name="celularReq" tpContato={"cel"} req={ true } value={this.state.cadastro.celularReq} updateValue={this.input_req}/>
                                     
-                                            <Label>fax *</Label>
-                                                <InputContato name="faxReq" tpContato={"FAX"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
+                                            <Label>Fax *</Label>
+                                                <InputContato name="faxReq" tpContato={"fax"} req={ true } value={this.state.cadastro.faxReq} updateValue={this.input_req}/>
                                     
                                             <ButtonGroup className="float-right form-actions">
                                                 <Btn validate={this.validate_input} form={() => {this.formValidate()}} value="Salvar"/>
@@ -77,7 +78,7 @@ class componentName extends Component {
                             <CardFooter>
                             <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}> Visualizar o Código </Button>
                                 <UncontrolledCollapse toggler="#toggler">
-                                    <h1 className="color_example">Manutenção</h1>
+                                    <CodeExample /> 
                                 </UncontrolledCollapse>
                             </CardFooter>
                         </Card>                    
