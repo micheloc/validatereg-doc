@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Card,   CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
-import { Btn, InputContato } from '../updateCodeFonte/index'; 
+import { Btn, InputContato } from 'validatereg'; 
 
 import "../home.scss"; 
 
