@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Card,   CardBody, CardFooter, Row, Label,  ButtonGroup,  Button, UncontrolledCollapse} from 'reactstrap'; 
-import { Btn, InputRegistro} from '../updateCodeFonte/index'; 
+import { Btn, InputRegistro} from 'validatereg'; 
 import "../home.scss"; 
 
 class componentName extends Component {
