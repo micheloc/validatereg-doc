@@ -48,7 +48,7 @@
         "reactjs-popup": "^1.5.0",
         "reactstrap": "^8.1.1",
         "simple-line-icons": "^2.4.1",
-        "validatereg": "^0.6.4",
+        "validatereg": "^0.6.6",
         "yup": "^0.27.0"
     },
     "devDependencies": {
