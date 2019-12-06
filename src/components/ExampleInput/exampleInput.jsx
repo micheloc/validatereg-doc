@@ -14,7 +14,7 @@ class ExampleInput extends Component {
                         <h5 className="color_example"> 
                             <span className="class_color">{"class "}</span>
                             {"componentExample"}
-                            <span className="component_color">{" extendes"}</span> 
+                            <span className="component_color">{" extends"}</span> 
                             <span className="componentEx_color">{" Component"}</span>
                             {" { "}
                         </h5>
@@ -23,7 +23,7 @@ class ExampleInput extends Component {
                             <span className="class_color">{"constructor"}</span>
                             {" ("}
                             <span className="props_color">{"props"}</span>
-                            {")"}
+                            {"){"}
                         </h5>                            
 
                         <h5 className="color_example">&emsp; &emsp;{"super(props);"}</h5>
@@ -89,7 +89,7 @@ class ExampleInput extends Component {
                         {/* Render */}
                         <h5 className="color_example">&emsp; <span className="componentEx_color">{"render"}</span>{" ( ) {"} </h5>
                         {/* Return */}
-                        <h5 className="color_example">&emsp; &emsp; <span className="component_color">{"return "}</span> {"( "} {"return ("}</h5>
+                        <h5 className="color_example">&emsp; &emsp; <span className="component_color">{"return "}</span> {"( "}</h5>
                         {/* primeira div */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; {"<"}<span className="elements">{"div"}</span>{">"}</h5>
                         {/* primeiro card */}
@@ -105,11 +105,11 @@ class ExampleInput extends Component {
                         {/* InpuT  True */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
                             {"<"}<span className="elements">{"InpuT "}</span>{"name='nome' "}
-                            {"req={ "}<span className="class_color">{"true"}</span>{" }"}
-                            {"value={ "}<span className="this_color">{"this"}</span>{".state."}
-                            <span className="state_variavel">{"cadastro"}</span>{".nome"}
-                            {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
-                            <span className="componentEx_color">{"input_req"}</span> {" />"}
+                            {"req={"}<span className="class_color">{"true"}</span>{"}"}
+                            {" value={ "}<span className="this_color">{"this"}</span>{".state."}
+                            <span className="state_variavel">{"cadastro"}</span>{".nome }"}
+                            {" updateValue={ "}<span className="this_color">{"this"}</span>{"."}
+                            <span className="componentEx_color">{"input_req"}</span> {"} />"}
                         </h5>
                         <br/>
                         {/* Label */}
@@ -117,18 +117,18 @@ class ExampleInput extends Component {
                         {/* InpuT False */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
                             {"<"}<span className="elements">{"InpuT "}</span>{"name='sobrenome' "}
-                            {"req={ "}<span className="class_color">{"false"}</span>{" }"}
+                            {"req={"}<span className="class_color">{"false"}</span>{"}"}
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
-                            <span className="state_variavel">{"cadastro"}</span>{".sobrenome"}
-                            {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
-                            <span className="componentEx_color">{"input_req"}</span> {" />"}
+                            <span className="state_variavel">{"cadastro"}</span>{".sobrenome }"}
+                            {" updateValue={"}<span className="this_color">{"this"}</span>{"."}
+                            <span className="componentEx_color">{"input_req"}</span> {"} />"}
                         </h5>
 
                         {/* /Col */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"</"}<span className="elements">{"Col "}</span>{">"}</h5>
                         <br/>
 
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"ButtonGroup "}</span><span className="compoentEx_color">{"className"}</span>{"='float-right form-action >"}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"ButtonGroup "}</span><span className="compoentEx_color">{"className"}</span>{"='float-right form-action' >"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {" <Btn validate={ this.validate_input } form={ ()=> { this.formValidate()}} value='Salvar' /> "}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"</"}<span className="elements">{"ButtonGroup"}</span>{">"}</h5>
                         <br/>
