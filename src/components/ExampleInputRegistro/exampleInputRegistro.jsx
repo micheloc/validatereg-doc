@@ -24,7 +24,7 @@ class ExampleInputRegistro extends Component {
                             <span className="class_color">{"constructor"}</span>
                             {" ("}
                             <span className="props_color">{"props"}</span>
-                            {")"}
+                            {"){"}
                         </h5>  
                         <h5 className="color_example">&emsp; &emsp;{"super(props);"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp;{"this.state={"}</h5>
@@ -89,9 +89,9 @@ class ExampleInputRegistro extends Component {
          
 
                         {/* Render */}
-                        <h5 className="color_example">&emsp; <span className="componentEx_color">{"render"}</span>{" ( ) {"} </h5>
+                        <h5 className="color_example">&emsp; <span className="componentEx_color">{"render"}</span>{"(){"} </h5>
                         {/* Return */}
-                        <h5 className="color_example">&emsp; &emsp; <span className="component_color">{"return "}</span> {"( "} {"return ("}</h5>
+                        <h5 className="color_example">&emsp; &emsp; <span className="component_color">{"return"}</span> {"()"}</h5>
                         {/* primeira div */}
                         <h5 className="color_example">&emsp; &emsp; &emsp; {"<"}<span className="elements">{"div"}</span>{">"}</h5>
                         {/* primeiro card */}
@@ -109,7 +109,7 @@ class ExampleInputRegistro extends Component {
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
                             {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cpf' "}
                             {"req={ "}<span className="class_color">{"false"}</span>{" } "}
-                            {"registro={ "}<span className="state_variavel">{"CPF"}</span>{" } "} 
+                            {"registro={ "}<span className="state_variavel">{"'CPF'"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
                             <span className="state_variavel">{"cadastro"}</span>{".cpf } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
@@ -123,7 +123,7 @@ class ExampleInputRegistro extends Component {
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
                             {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cnpj' "}
                             {"req={ "}<span className="class_color">{"false"}</span>{" } "}
-                            {"registro={ "}<span className="state_variavel">{"CNPJ"}</span>{" } "} 
+                            {"registro={ "}<span className="state_variavel">{"'CNPJ'"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
                             <span className="state_variavel">{"cadastro"}</span>{".cnpj } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
@@ -137,7 +137,7 @@ class ExampleInputRegistro extends Component {
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
                             {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cpfReq' "}
                             {"req={ "}<span className="class_color">{"true"}</span>{" } "}
-                            {"registro={ "}<span className="state_variavel">{"CPF"}</span>{" } "} 
+                            {"registro={ "}<span className="state_variavel">{"'CPF'"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
                             <span className="state_variavel">{"cadastro"}</span>{".cpfReq } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
@@ -151,7 +151,7 @@ class ExampleInputRegistro extends Component {
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
                             {"<"}<span className="elements">{"InputRegistro "}</span>{"name='cnpjReq' "}
                             {"req={ "}<span className="class_color">{"true"}</span>{" } "}
-                            {"registro={ "}<span className="state_variavel">{"CNPJ"}</span>{" } "} 
+                            {"registro={ "}<span className="state_variavel">{"'CNPJ'"}</span>{" } "} 
                             {"value={ "}<span className="this_color">{"this"}</span>{".state."}
                             <span className="state_variavel">{"cadastro"}</span>{".cnpjReq } "}
                             {"updateValue={ "}<span className="this_color">{"this"}</span>{"."}
@@ -162,7 +162,7 @@ class ExampleInputRegistro extends Component {
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"</"}<span className="elements">{"Col "}</span>{">"}</h5>
                         <br/>
 
-                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"ButtonGroup "}</span><span className="compoentEx_color">{"className"}</span>{"='float-right form-action >"}</h5>
+                        <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"<"}<span className="elements">{"ButtonGroup "}</span><span className="compoentEx_color">{"className"}</span>{"='float-right form-action' >"}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {" <Btn validate={ this.validate_input } form={ ()=> { this.formValidate()}} value='Salvar' /> "}</h5>
                         <h5 className="color_example">&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; {"</"}<span className="elements">{"ButtonGroup"}</span>{">"}</h5>
                         <br/>
